@@ -17,6 +17,8 @@ public class Program {
 			System.out.printf("Результат в цельсиях: %.2f", tc.toCelsius(fahrenheit));	
 		}catch(InputMismatchException e) {
 			System.out.println("Ошибочные входные данные");
+		}catch(IllegalArgumentException e) {
+			System.out.println(e.getMessage());
 		}
 	}
 }
